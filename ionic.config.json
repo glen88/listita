@@ -1,0 +1,8 @@
+{
+  "name": "Mi listita",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

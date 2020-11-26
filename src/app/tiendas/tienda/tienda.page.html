@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="light" >
+    <ion-title color="primary" class="ion-text-center">
+      <ion-icon name="home"> </ion-icon>
+      Mis tiendas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-lista [datos]=service.tiendas [pantalla]="'tienda'"></app-lista> 
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button size="small" color="success" (click)="agregarTienda()">
+        <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+</ion-fab>
+</ion-content>
+<ion-footer [translucent]="true">
+  <ion-toolbar color="secondary" >
+    <!-- <ion-title color="primary">Mis tiendas</ion-title> -->
+  </ion-toolbar>
+</ion-footer>
+
